@@ -4,7 +4,7 @@ public class RepairOrderEntity
 {
     public Guid ClientId { get; set; }
     public Guid TechnicianId { get; set; }
-    public string DeviceType { get; set; }
+    public Guid DeviceTypeId { get; set; }
     public string SerialNumber { get; set; }
     public string Problem { get; set; }
     public string Diagnosis { get; set; }
@@ -13,6 +13,7 @@ public class RepairOrderEntity
     public decimal? FinalCost { get; set; }
     public DateTime? CompletedAt { get; set; }
     
+    public DeviceTypeEntity DeviceType { get; set; }
     public OrderStatusEntity Status { get; set; }
     public ClientEntity Client { get; set; }
     public UserEntity Technician { get; set; }
