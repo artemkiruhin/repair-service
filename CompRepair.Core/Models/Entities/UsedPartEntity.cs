@@ -1,6 +1,6 @@
 ﻿namespace CompRepair.Core.Models.Entities;
 
-public class UsedPart
+public class UsedPartEntity
 {
     public Guid Id { get; set; }
     public int Quantity { get; set; }

@@ -15,5 +15,5 @@ public class RepairOrderEntity
     
     public ClientEntity Client { get; set; }
     public UserEntity Technician { get; set; }
-    public ICollection<UsedPart> UsedParts { get; set; }
+    public ICollection<UsedPartEntity> UsedParts { get; set; }
 }
