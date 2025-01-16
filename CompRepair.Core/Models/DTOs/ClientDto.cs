@@ -1,12 +1,3 @@
 ﻿namespace CompRepair.Core.Models.DTOs;
 
-public class ClientDto
-{
-    public Guid Id { get; set; }
-    public string FullName { get; set; } 
-    public string Email { get; set; } 
-    public string Phone { get; set; } 
-    public DateTime? BirthDate { get; set; }
-
-    public List<RepairOrderDto> RepairOrders { get; set; } = [];
-}
+public record ClientDto(Guid Id, string FullName, string Email, string Phone, DateTime? BirthDate, List<RepairOrderDto> RepairOrders);
