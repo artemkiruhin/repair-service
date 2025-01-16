@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CompRepair.Core.Services.EntityServices.Base;
 
-public class BaseEntityService<TDto, TEntity> where TEntity : class
+public class BaseEntityService<TEntity> where TEntity : class
 {
     protected readonly AppDbContext _context;
     protected readonly DbSet<TEntity> _dbSet;
