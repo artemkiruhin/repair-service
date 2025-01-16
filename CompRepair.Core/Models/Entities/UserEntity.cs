@@ -13,4 +13,6 @@ public class UserEntity
     public DateTime? FiredDate { get; set; }
     public DateTime BirthDate { get; set; }
     public string Role { get; set; } = string.Empty;
+    
+    public virtual ICollection<RepairOrderEntity> RepairOrders { get; set; } = new List<RepairOrderEntity>();
 }
