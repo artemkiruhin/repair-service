@@ -120,10 +120,9 @@ public class AppDbContext : DbContext
                 .HasColumnType("timestamp with time zone")
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .IsRequired();
-            
+
             builder.Property(c => c.UserId)
-                .HasColumnType("uuid")
-                .IsRequired();
+                .HasColumnType("uuid");
             
             builder.Property(c => c.Message)
                 .HasColumnType("text")
