@@ -9,4 +9,16 @@ public class ClientEntity
     public DateTime? BirthDate { get; set; }
     
     public virtual ICollection<RepairOrderEntity> RepairOrders { get; set; } = new List<RepairOrderEntity>();
+    
+    public static ClientEntity Create(string fullName, string? email, string phone, DateTime? birthDate)
+    {
+        return new()
+        {
+            Id = Guid.NewGuid(),
+            FullName = fullName,
+            Email = email,
+            Phone = phone,
+            BirthDate = birthDate
+        };
+    }
 }

@@ -15,4 +15,22 @@ public class UserEntity
     public string Role { get; set; } = string.Empty;
     
     public virtual ICollection<RepairOrderEntity> RepairOrders { get; set; } = new List<RepairOrderEntity>();
+    
+    public static UserEntity Create(string username, string fullName, string password, DateTime hiredDate, DateTime? firedDate, string role, decimal salary, string phone, string email, DateTime birthDate)
+    {
+        return new()
+        {
+            Id = Guid.NewGuid(),
+            Username = username,
+            Password = password,
+            HiredDate = hiredDate,
+            FiredDate = firedDate,
+            Role = role,
+            Salary = salary,
+            Phone = phone,
+            Email = email,
+            BirthDate = birthDate,
+            FullName = fullName
+        };
+    }
 }

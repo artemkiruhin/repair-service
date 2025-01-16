@@ -11,4 +11,16 @@ public class UsedPartEntity
     
     public Guid RepairOrderId { get; set; }
     public virtual RepairOrderEntity RepairOrder { get; set; } = null!;
+    
+    public static UsedPartEntity Create(Guid partId, int quantity, decimal pricePerUnit, Guid repairOrderId)
+    {
+        return new()
+        {
+            Id = Guid.NewGuid(),
+            PartId = partId,
+            Quantity = quantity,
+            PricePerUnit = pricePerUnit,
+            RepairOrderId = repairOrderId
+        };
+    }
 }

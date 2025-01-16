@@ -18,4 +18,21 @@ public class RepairOrderEntity
     public virtual ClientEntity Client { get; set; } = null!;
     public virtual UserEntity Technician { get; set; } = null!;
     public virtual ICollection<UsedPartEntity> UsedParts { get; set; } = new List<UsedPartEntity>();
+    
+    public static RepairOrderEntity Create(Guid clientId, Guid technicianId, Guid deviceTypeId, string problem, string diagnosis, decimal estimatedCost, decimal finalCost, Guid statusId)
+    {
+        return new()
+        {
+            SerialNumber = Guid.NewGuid(),
+            ClientId = clientId,
+            TechnicianId = technicianId,
+            DeviceTypeId = deviceTypeId,
+            Problem = problem,
+            Diagnosis = diagnosis,
+            EstimatedCost = estimatedCost,
+            FinalCost = finalCost,
+            CompletedAt = DateTime.UtcNow,
+            StatusId = statusId
+        };
+    }
 }

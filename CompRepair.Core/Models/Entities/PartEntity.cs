@@ -15,4 +15,18 @@ public class PartEntity
     
     public Guid ManufacturerId { get; set; }
     public virtual ManufacturerEntity Manufacturer { get; set; } = null!;
+    
+    public static PartEntity Create(string name, string? description, decimal price, int stockQuantity, Guid categoryId, Guid manufacturerId)
+    {
+        return new()
+        {
+            Id = Guid.NewGuid(),
+            Name = name,
+            Description = description,
+            Price = price,
+            StockQuantity = stockQuantity,
+            CategoryId = categoryId,
+            ManufacturerId = manufacturerId
+        };
+    }
 }
