@@ -22,7 +22,7 @@ public class CategoryService : BaseEntityService<CategoryEntity>
         return dto;
     }
 
-    public async Task<bool> AddAsync(Guid userId, string name)
+    public async Task<bool> AddAsync(string name)
     {
         try
         {
@@ -42,7 +42,7 @@ public class CategoryService : BaseEntityService<CategoryEntity>
         }
     }
     
-    public async Task<bool> UpdateAsync(Guid userId, Guid id, string name)
+    public async Task<bool> UpdateAsync(Guid id, string name)
     {
         try
         {
