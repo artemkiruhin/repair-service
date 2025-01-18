@@ -18,8 +18,4 @@
       </Compile>
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Helpers\Fillers\" />
-    </ItemGroup>
-
 </Project>
