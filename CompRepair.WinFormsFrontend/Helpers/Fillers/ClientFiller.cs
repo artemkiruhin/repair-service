@@ -14,26 +14,13 @@ public class ClientFiller
         
             foreach (var client in clients)
             {
-                foreach (var order in client.RepairOrders)
-                {
-                    foreach (var part in order.UsedParts)
-                    {
-                        dataGridView.Rows.Add(
-                            client.Id, 
-                            client.FullName, 
-                            client.Email, 
-                            client.Phone, 
-                            client.BirthDate?.ToShortDateString() ?? "",
-                            order.SerialNumber,
-                            order.Problem,
-                            order.Diagnosis,
-                            order.Status,
-                            part.PartName,
-                            part.Quantity,
-                            part.PricePerPart
-                        );
-                    }
-                }
+                dataGridView.Rows.Add(
+                    client.Id, 
+                    client.FullName, 
+                    client.Email, 
+                    client.Phone, 
+                    client.BirthDate?.ToShortDateString() ?? ""
+                );
             }
         }
         catch (Exception ex)
