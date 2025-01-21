@@ -39,8 +39,8 @@
             button2 = new Button();
             button1 = new Button();
             panel2 = new Panel();
-            label1 = new Label();
             button9 = new Button();
+            label1 = new Label();
             panel4 = new Panel();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -87,7 +87,7 @@
             button8.Name = "button8";
             button8.Size = new Size(340, 61);
             button8.TabIndex = 7;
-            button8.Text = "Страница 1";
+            button8.Text = "Запчасти";
             button8.UseVisualStyleBackColor = true;
             // 
             // button7
@@ -101,7 +101,7 @@
             button7.Name = "button7";
             button7.Size = new Size(340, 61);
             button7.TabIndex = 6;
-            button7.Text = "Страница 1";
+            button7.Text = "Заказы";
             button7.UseVisualStyleBackColor = true;
             // 
             // button6
@@ -115,7 +115,7 @@
             button6.Name = "button6";
             button6.Size = new Size(340, 61);
             button6.TabIndex = 5;
-            button6.Text = "Страница 1";
+            button6.Text = "Продажи";
             button6.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -129,7 +129,7 @@
             button5.Name = "button5";
             button5.Size = new Size(340, 61);
             button5.TabIndex = 4;
-            button5.Text = "Страница 1";
+            button5.Text = "Склад";
             button5.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -143,7 +143,7 @@
             button4.Name = "button4";
             button4.Size = new Size(340, 61);
             button4.TabIndex = 3;
-            button4.Text = "Страница 1";
+            button4.Text = "Клиенты";
             button4.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -157,7 +157,7 @@
             button3.Name = "button3";
             button3.Size = new Size(340, 61);
             button3.TabIndex = 2;
-            button3.Text = "Страница 1";
+            button3.Text = "Действия";
             button3.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -171,7 +171,7 @@
             button2.Name = "button2";
             button2.Size = new Size(340, 61);
             button2.TabIndex = 1;
-            button2.Text = "Страница 1";
+            button2.Text = "Таблицы";
             button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -185,7 +185,7 @@
             button1.Name = "button1";
             button1.Size = new Size(340, 61);
             button1.TabIndex = 0;
-            button1.Text = "Страница 1";
+            button1.Text = "Главная";
             button1.UseVisualStyleBackColor = true;
             // 
             // panel2
@@ -198,31 +198,33 @@
             panel2.Size = new Size(340, 80);
             panel2.TabIndex = 1;
             // 
-            // label1
-            // 
-            label1.Dock = DockStyle.Top;
-            label1.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            label1.Location = new Point(0, 0);
-            label1.Margin = new Padding(0);
-            label1.Name = "label1";
-            label1.Size = new Size(340, 81);
-            label1.TabIndex = 0;
-            label1.Text = "MyCRM";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // button9
             // 
+            button9.BackColor = Color.Firebrick;
             button9.Dock = DockStyle.Fill;
             button9.FlatAppearance.BorderSize = 0;
             button9.FlatStyle = FlatStyle.Flat;
             button9.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            button9.ForeColor = Color.White;
             button9.Location = new Point(0, 0);
             button9.Margin = new Padding(0);
             button9.Name = "button9";
             button9.Size = new Size(340, 80);
             button9.TabIndex = 8;
             button9.Text = "Выход";
-            button9.UseVisualStyleBackColor = true;
+            button9.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            label1.Dock = DockStyle.Top;
+            label1.Font = new Font("Impact", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(0, 0);
+            label1.Margin = new Padding(0);
+            label1.Name = "label1";
+            label1.Size = new Size(340, 81);
+            label1.TabIndex = 0;
+            label1.Text = "Reptool";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel4
             // 
