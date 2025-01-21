@@ -4,5 +4,8 @@
     <Compile Update="Pages\MainForms\RootForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Pages\Subforms\TablesPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
