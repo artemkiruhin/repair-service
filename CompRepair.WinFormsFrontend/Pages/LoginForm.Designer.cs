@@ -38,12 +38,15 @@ partial class LoginForm
         label2 = new Label();
         tb_login = new TextBox();
         label1 = new Label();
+        label3 = new Label();
+        panel1.SuspendLayout();
         panel2.SuspendLayout();
         SuspendLayout();
         // 
         // panel1
         // 
         panel1.BackColor = Color.White;
+        panel1.Controls.Add(label3);
         panel1.Dock = DockStyle.Top;
         panel1.Location = new Point(0, 0);
         panel1.Margin = new Padding(0);
@@ -129,6 +132,21 @@ partial class LoginForm
         label1.Text = "Логин";
         label1.TextAlign = ContentAlignment.MiddleCenter;
         // 
+        // label3
+        // 
+        label3.BackColor = Color.FromArgb(0, 123, 255);
+        label3.Dock = DockStyle.Fill;
+        label3.FlatStyle = FlatStyle.Flat;
+        label3.Font = new Font("Segoe UI", 36F, FontStyle.Regular, GraphicsUnit.Point, 204);
+        label3.ForeColor = Color.White;
+        label3.Location = new Point(0, 0);
+        label3.Margin = new Padding(20, 40, 20, 20);
+        label3.Name = "label3";
+        label3.Size = new Size(850, 169);
+        label3.TabIndex = 1;
+        label3.Text = "АВТОРИЗАЦИЯ";
+        label3.TextAlign = ContentAlignment.MiddleCenter;
+        // 
         // LoginForm
         // 
         AutoScaleDimensions = new SizeF(8F, 20F);
@@ -138,6 +156,7 @@ partial class LoginForm
         Controls.Add(panel1);
         Name = "LoginForm";
         Text = "LoginForm";
+        panel1.ResumeLayout(false);
         panel2.ResumeLayout(false);
         panel2.PerformLayout();
         ResumeLayout(false);
@@ -152,4 +171,5 @@ partial class LoginForm
     private Button btn_login;
     private TextBox tb_password;
     private Label label2;
+    private Label label3;
 }
